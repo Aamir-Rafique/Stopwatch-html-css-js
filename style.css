@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
@@ -8,66 +9,109 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 30px;
-    background-color: rgb(110, 250, 255);
-    margin-top: 100px;
+    justify-content: center;
+    gap: 2vmax;
+    background-color: rgba(110, 250, 255, 0.778);
+    /* margin-top: 100px; */
 }
 
 body>h1 {
-    font-size: 50px;
+    margin-top: 2vmax;
+    font-size: 3.5vmax;
 }
+
+nav {
+    height: 5vmax;
+    width: 100%;
+    background: linear-gradient(to right, #344dba, #764ba2);
+    padding-top: 12px;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+    text-align: center;
+}
+
+nav #logo-img {
+    width: 6vmax;
+}
+
+
 
 .container {
     height: auto;
-    width: auto;
-    background-image: linear-gradient(to right, rgb(157, 243, 201), rgb(182, 196, 184), rgb(229, 167, 81));
-    ;
-    padding: 20px;
+    width: 30%;
+    background-color: rgb(237, 232, 232);
+    padding: 1.3vmax;
     display: flex;
     flex-direction: column;
-    gap: 30px;
-    border: 4px solid black;
-    border-radius: 25px;
+    align-items: center;
+    gap: 2.3vmax;
+    border: 3px solid black;
+    border-radius: 20px;
 }
 
 .container #timer {
     text-align: center;
-    font-size: 70px;
-    /* background-color: yellow; */
+    font-size: 6vmax;
 }
 
 .container .controls {
-    width: 400px;
+    width: 90%;
     display: flex;
-    /* background-color: greenyellow; */
     justify-content: space-between;
-
-}
+    }
 
 .container .controls button {
-    height: 50px;
-    width: 90px;
-    font-size: 20px;
+    padding: 0.6vmax 1.2vmax;
+    font-size: 1.7vmax;
     border-radius: 6px;
     cursor: pointer;
     color: white;
+    border: none;
 }
 
 .container .controls #btnStart {
     background-color: rgb(1, 217, 109);
 }
 
+.container .controls #btnStart:hover {
+    background-color: rgb(1, 152, 77);
+}
+
 .container .controls #btnPause {
     background-color: gray;
+}
+
+.container .controls #btnPause:hover {
+    background-color: rgb(88, 87, 87);
 }
 
 .container .controls #btnReset {
     background-color: orangered;
 }
 
+.container .controls #btnReset:hover {
+    background-color: rgb(255, 0, 0);
+}
+
 .container #time-indicator {
     font-size: 25px;
     /* background-color: aqua; */
     text-align: center;
+}
+
+footer {
+    margin-top: 1.5rem;
+    font-size: 0.875rem;
+    text-align: center;
+    color: #2a2b2d;
+}
+
+footer p a {
+    text-decoration: none;
+    color: #0c348c;
+}
+
+footer p a:hover {
+    text-decoration: underline;
 }

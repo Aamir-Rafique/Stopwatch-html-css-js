@@ -1,0 +1,15 @@
+@media (max-width: 721px) {
+
+    body {
+        height: 75vh;
+        gap: 3vmax;
+    }
+
+    .container {
+        width: 63%;
+    }
+    
+    footer p {
+        font-size: 1.4vmax;
+    }
+}
